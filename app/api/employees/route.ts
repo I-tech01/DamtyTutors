@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
     // Fire confirmation email tracking alert via Resend
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "isaacadedokun111@gmail.com",
+      to: "damtytutors@gmail.com",
       subject: "New Tutor Joined",
       text: `A new tutor has joined: ${employee.name}\nEmail: ${employee.contactInfo.email}\nInstitution: ${employee.education.institution}\nDegree: ${employee.education.degree}\nGraduation Year: ${employee.education.graduationYear}\nYears Exp: ${employee.experienceYears}\nAddress: ${employee.address.street}, ${employee.address.city}\nProfile Picture: ${employee.profilePictureUrl}`,
     });
